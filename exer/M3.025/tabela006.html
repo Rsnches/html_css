@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 5px;
+        }
+        th, td{
+            border:1px solid black;
+            padding: 5px;
+        }
+        .destaque{
+            background-color: lightgreen;
+        }
+        col.cnome{
+            background-color: rgb(41, 76, 192);
+        }
+        col.csexo{
+            background-color: rgb(172, 40, 121);
+        }
+        col.cidade{
+            background-color: rgb(173, 129, 32);
+        }
+        col.cprof{
+            background-color: rgb(207, 78, 18);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof"> 
+        </colgroup>
+        <caption>Cadrastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Desenvolvedor</td>
+        </tr>   
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Balconista</td>
+        </tr>   
+        <tr>
+            <td>José Paulo</td>
+            <td>m</td>
+            <td>45</td>
+            <td>Pedreiro</td>
+        </tr>   
+        <tr>
+            <td>Douglas</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Motorista</td>
+        </tr>       
+
+    </table>
+</body>
+</html>
