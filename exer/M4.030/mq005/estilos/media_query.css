@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* Todas asa demais mídias*/
+
+/* Typical device breakpoints
+----------------------------
+Celular: De 600px até 768px
+Tablet: De 768px até 992px
+desktop: De 992px até 1200
+tv: Acima de 1200px
+----------------------------
+*/
+
+@media print{
+   *{
+        font-family: 'Courier New', Courier, monospace; 
+    }
+
+   body{
+    background-image: url(../imagens/back-print.jpg);/*desnecessário*/    
+    text-shadow: none;
+    
+   }
+   main{
+    width: 90%;
+    border: 1px solid black;
+   }
+   main h1{
+    color: black;
+   }
+   main::after{
+    content:"Texto de texte de impressão para o curso de HTML/CSS.";
+    text-decoration: underline;
+   }
+   img#phone{ display:none}
+   img#tablet{ display:none}
+   img#print{ display:block}
+   img#pc{ display:none}
+   img#tv{ display:none}  
+        
+}
+@media only screen and (min-width: 768px) {
+    body{
+        background-image:url(../imagens/back-tablet.jpg);
+    }
+    main{
+        width: 500px;
+    }
+    img#phone{ display:none}
+    img#tablet{ display:block}
+    img#print{ display:none}
+    img#pc{ display:none}
+    img#tv{ display:none}  
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        background-image:url(../imagens/back-pc.jpg);
+    }
+    main{
+        width: 600px;
+    }
+    img#phone{ display:none}
+    img#tablet{ display:none}
+    img#print{ display:none}
+    img#pc{ display:block}
+    img#tv{ display:none}   
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background-image:url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#phone{ display:none}
+    img#tablet{ display:none}
+    img#print{ display:none}
+    img#pc{ display:none}
+    img#tv{ display:block}      
+}
+
+
